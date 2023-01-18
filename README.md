@@ -13,6 +13,14 @@
 ```
     ionic g page pages/action-sheet --spec=false
 ```
+5. Creamos un modulo para los componentes
+```
+    ionic g module components
+```
+6. Creamos un componente personalizado
+```
+    ionic g component components/header --spec=false
+```
 
 # Otros
 
