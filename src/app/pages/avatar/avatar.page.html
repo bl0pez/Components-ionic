@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Avatar</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-avatar>
+        <!-- <img src="/assets/stan-lee.jpg" /> -->
+        <ion-img src="/assets/stan-lee.jpg"></ion-img>
+      </ion-avatar>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-chip 
+    color="primary" 
+    outline="true"
+    >
+    <ion-avatar>
+      <img src="/assets/stan-lee.jpg" />
+    </ion-avatar>
+    <ion-label>Default</ion-label>
+  </ion-chip>
+  
+  <ion-chip 
+    color="primary" 
+    outline="true"
+    >
+    <ion-avatar>
+      <img src="/assets/stan-lee.jpg" />
+    </ion-avatar>
+    <ion-label>Default</ion-label>
+  </ion-chip>
+
+  <ion-list>
+    <ion-item *ngFor="let item of [1,1,1,1]">
+      <ion-avatar slot="start">
+        <img src="/assets/stan-lee.jpg" />
+      </ion-avatar>
+      <ion-label>
+        <h2>Stan Lee</h2>
+        <p>Stan Lee is an American comic book writer, editor, publisher, media producer, television host, actor, and former president and chairman of Marvel Comics.</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
